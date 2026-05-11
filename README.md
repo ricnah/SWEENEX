@@ -1,13 +1,16 @@
 <p align="center">
   <svg width="150" height="150" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
     <defs>
-      <linearGradient id="wifi-grad" x1="50" y1="10" x2="50" y2="90" gradientUnits="userSpaceOnUse">
-        <stop offset="0%"   stopColor="#60A5FA" />
-        <stop offset="50%"  stopColor="#3B82F6" />
-        <stop offset="100%" stopColor="#1E3A8A" />
+      <linearGradient id="wifi-s-grad" x1="50" y1="10" x2="50" y2="90" gradientUnits="userSpaceOnUse">
+        <stop offset="0%" stop-color="#60A5FA" />
+        <stop offset="50%" stop-color="#3B82F6" />
+        <stop offset="100%" stop-color="#1E3A8A" />
       </linearGradient>
+      <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+        <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#3B82F6" flood-opacity="0.5" />
+      </filter>
     </defs>
-    <g stroke="url(#wifi-grad)" strokeWidth="12" strokeLinecap="round" strokeLinejoin="round">
+    <g stroke="url(#wifi-s-grad)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
       <path d="M 20,35 C 30,15 70,15 80,35 L 50,55" />
       <path d="M 80,65 C 70,85 30,85 20,65 L 50,45" />
     </g>
@@ -64,10 +67,6 @@
 
 By utilizing an ESP32 to sniff packets and an ONNX-powered ML model containing Spatial CNNs and Temporal Transformer Encoders, SWEENEX achieves a Mean Per Joint Position Error (MPJPE) of just `93.7 mm`—without ever turning on a camera.
 
-<p align="center">
-  <!-- Placeholder for your animated web interface preview GIF -->
-  <img src="https://via.placeholder.com/800x400.png?text=Animated+GIF+of+SWEENEX+Web+Dashboard+Here" alt="SWEENEX Demo" style="border-radius: 10px;"/>
-</p>
 
 ---
 
@@ -178,7 +177,7 @@ Testing ESP32 connection on /dev/ttyUSB0 for 10s...
   10s — 950 packets — 95.0 Hz — 3 routers
 
 ==================================================
-Hasil Test (10s):
+Test Results (10s):
   Total packets : 950
   Sampling rate : 95.0 Hz  ✓
   Parse errors  : 0
@@ -189,7 +188,7 @@ Router details:
   AA:BB:CC:DD:EE:22  →  320 packets (33.6%)
   AA:BB:CC:DD:EE:33  →  280 packets (29.4%)
 
-✓ Koneksi OK! Server siap dijalankan.
+✓ Connection OK! Server is ready to run.
 ```
 
 ### Starting the System
