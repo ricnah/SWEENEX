@@ -1,0 +1,39 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+html, body {
+  margin:     0;
+  padding:    0;
+  background: #0a0f1e;
+  color:      #e2e8f0;
+}
+::-webkit-scrollbar         { width: 6px; }
+::-webkit-scrollbar-track   { background: #0f172a; }
+::-webkit-scrollbar-thumb   { background: #1e3a5f; border-radius: 3px; }
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.landing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  .landing-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

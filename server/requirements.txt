@@ -1,0 +1,10 @@
+pyserial
+websockets
+numpy
+scipy
+scikit-learn
+onnxruntime
+asyncio-throttle
+pyyaml
+structlog
+click

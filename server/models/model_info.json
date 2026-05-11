@@ -1,0 +1,44 @@
+{
+  "name":        "sweenex_pose_v2_multi_router",
+  "version":     "2.0.0",
+  "description": "Multi-router WiFi CSI to 3D human pose estimation",
+  "architecture": "CNN (spatial) + Transformer Encoder (temporal)",
+  "input": {
+    "name":  "csi_tensor",
+    "shape": [1, 1, 100, -1],
+    "dtype": "float32",
+    "note":  "Feature dim = n_routers * 52 (dynamic). Pad/trim di ml_inference.py"
+  },
+  "outputs": [
+    {
+      "name":  "keypoints_3d",
+      "shape": [1, 17, 3],
+      "dtype": "float32",
+      "unit":  "meter",
+      "note":  "COCO 17 keypoints, koordinat (x, y, z)"
+    },
+    {
+      "name":  "confidences",
+      "shape": [1, 17],
+      "dtype": "float32",
+      "range": [0.0, 1.0]
+    }
+  ],
+  "training": {
+    "dataset":            "MM-Fi",
+    "subjects":           40,
+    "n_routers_training": 3,
+    "epochs":             100,
+    "mpjpe_mm":           93.7,
+    "trained_date":       "2026-05"
+  },
+  "hardware_requirements": {
+    "esp32_mode":          "HT40",
+    "n_subcarriers":       52,
+    "sampling_rate_hz":    100,
+    "window_size":         100,
+    "recommended_routers": 3
+  },
+  "file_size_mb": 29.1,
+  "onnx_opset":   17
+}

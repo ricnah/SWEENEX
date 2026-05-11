@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  sweenex-server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    volumes:
+      - /dev/ttyUSB0:/dev/ttyUSB0
+      - ./server/models:/app/models
+      - ./server/configs:/app/configs
+      - ./server/logs:/app/logs
+    ports:
+      - "8765:8765"
+    command: python main.py --port /dev/ttyUSB0
+    privileged: true
+    restart: unless-stopped
