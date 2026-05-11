@@ -195,7 +195,7 @@ If `test_connection.py` fails or returns `✗ Ada masalah. Cek firmware ESP32 da
 
 ## 📜 License
 
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 <p align="center">
