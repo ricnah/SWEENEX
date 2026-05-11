@@ -1,6 +1,17 @@
 <p align="center">
-  <!-- Replace the src below with the actual raw GitHub URL of your animated logo -->
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Radio.png" alt="SWEENEX Animated Logo" width="150" />
+  <svg width="150" height="150" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="wifi-grad" x1="50" y1="10" x2="50" y2="90" gradientUnits="userSpaceOnUse">
+        <stop offset="0%"   stopColor="#60A5FA" />
+        <stop offset="50%"  stopColor="#3B82F6" />
+        <stop offset="100%" stopColor="#1E3A8A" />
+      </linearGradient>
+    </defs>
+    <g stroke="url(#wifi-grad)" strokeWidth="12" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M 20,35 C 30,15 70,15 80,35 L 50,55" />
+      <path d="M 80,65 C 70,85 30,85 20,65 L 50,45" />
+    </g>
+  </svg>
 </p>
 
 <h1 align="center" style="font-family: 'Arial Black', Impact, sans-serif; font-size: 3rem; letter-spacing: 4px; color: #2ecc71;">
