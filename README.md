@@ -1,23 +1,8 @@
 <p align="center">
-  <svg width="150" height="150" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <linearGradient id="wifi-s-grad" x1="50" y1="10" x2="50" y2="90" gradientUnits="userSpaceOnUse">
-        <stop offset="0%" stop-color="#60A5FA" />
-        <stop offset="50%" stop-color="#3B82F6" />
-        <stop offset="100%" stop-color="#1E3A8A" />
-      </linearGradient>
-      <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-        <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#3B82F6" flood-opacity="0.5" />
-      </filter>
-    </defs>
-    <g stroke="url(#wifi-s-grad)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
-      <path d="M 20,35 C 30,15 70,15 80,35 L 50,55" />
-      <path d="M 80,65 C 70,85 30,85 20,65 L 50,45" />
-    </g>
-  </svg>
+  <img src="assets/logo.svg" width="150" height="150" alt="SWEENEX Logo">
 </p>
 
-<h1 align="center" style="font-family: 'Arial Black', Impact, sans-serif; font-size: 3rem; letter-spacing: 4px; color: #2ecc71;">
+<h1 align="center" style="font-family: 'Orbitron', sans-serif; font-size: 3rem; letter-spacing: 4px; color: #2ecc71;">
   SWEENEX
 </h1>
 
@@ -216,5 +201,5 @@ This project is licensed under the MIT License.
 
 ---
 <p align="center">
-  <i>Designed and developed by the SWEENEX Team. Bringing radio-wave vision to life.</i>
+  <i>Designed and developed by the SWEENEX - Ricki. Bringing radio-wave vision to life.</i>
 </p>
