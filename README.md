@@ -1,10 +1,8 @@
 <p align="center">
-  <img src="assets/logo.svg" width="150" height="150" alt="SWEENEX Logo">
+  <img src="assets/logo.svg" width="150" height="150" alt="logo">
+  <br>
+  <img src="assets/title.svg" alt="SWEENEX">
 </p>
-
-<h1 align="center" style="font-family: 'Orbitron', sans-serif; font-size: 3rem; letter-spacing: 4px; color: #2ecc71;">
-  SWEENEX
-</h1>
 
 <h3 align="center">WiFi-Based 3D Human Tracking System</h3>
 
